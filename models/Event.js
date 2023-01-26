@@ -28,7 +28,9 @@ const EventSchema = new mongoose.Schema({
     },
     date: {
         type: Date,
-        required: [true, 'Please provide date of the event']
+        required: [true, 'Please provide date of the event'],
+        min: new Date().toISOString().slice(0, 10),
+        default: new Date().toISOString().slice(0, 10)
     },
     time: {
         type: String,
