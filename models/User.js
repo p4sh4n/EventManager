@@ -38,7 +38,6 @@ const UserSchema = new mongoose.Schema({
         type: Date,
         required: [true, 'Please provide date of birth'],
         max: '2020-01-01',
-        min: new Date().toISOString().slice(0, 10),
         default: new Date().toISOString().slice(0, 10)
     }
 })
