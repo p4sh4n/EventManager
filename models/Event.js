@@ -14,7 +14,7 @@ const EventSchema = new mongoose.Schema({
     type: {
         type: String,
         enum: {
-            values: ['concert', 'movie', 'publicTalk', 'theatreShow', 'conference'],
+            values: ['concert', 'movie', 'publicTalk', 'sport', 'conference'],
             message: '{VALUE} type does not exist!',
         },
         required: true
